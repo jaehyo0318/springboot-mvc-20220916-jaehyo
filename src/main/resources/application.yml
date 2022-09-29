@@ -1,0 +1,12 @@
+server:
+  port: 8000
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB       # 파일(하나)의 사이즈
+      max-request-size: 10MB    # request 최대 사이즈
+
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
