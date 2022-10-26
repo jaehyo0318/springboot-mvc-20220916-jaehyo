@@ -26,7 +26,7 @@
         function getPreview() {
             const reader = new FileReader();
             
-            reader.onload = (e) => { //readASDataURL이 실행되면 onload실행됨
+            reader.onload = (e) => { //readAsDataURL이 실행되면 onload실행됨
                 const filePreview = document.querySelector(".file-preview");
                 filePreview.src = e.target.result;
             }
